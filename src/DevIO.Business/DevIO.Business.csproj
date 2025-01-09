@@ -52,6 +52,9 @@
   <ItemGroup>
     <Compile Include="Core\Data\IRepository.cs" />
     <Compile Include="Core\Models\Entity.cs" />
+    <Compile Include="Core\Notifications\INotificator.cs" />
+    <Compile Include="Core\Notifications\Notification.cs" />
+    <Compile Include="Core\Notifications\Notificator.cs" />
     <Compile Include="Core\Services\BaseService.cs" />
     <Compile Include="Core\Validations\Documentos\DocumentValidation.cs" />
     <Compile Include="Models\Fornecedores\Endereco.cs" />
@@ -65,14 +68,14 @@
     <Compile Include="Models\Fornecedores\Validations\FornecedorValidation.cs" />
     <Compile Include="Models\Produtos\IProdutoRepository.cs" />
     <Compile Include="Models\Produtos\Produto.cs" />
+    <Compile Include="Models\Produtos\Services\IProdutoService.cs" />
+    <Compile Include="Models\Produtos\Services\ProdutoService.cs" />
     <Compile Include="Models\Produtos\Validations\ProdutoValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Produtos\Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
