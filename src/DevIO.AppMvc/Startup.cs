@@ -1,5 +1,9 @@
-﻿using Microsoft.Owin;
-using Owin;
+﻿using Owin;
+using Microsoft.Owin;
+using System.Web.Mvc;
+using System.Web.Optimization;
+using System.Web.Routing;
+using DevIO.AppMvc.App_Start;
 
 [assembly: OwinStartupAttribute(typeof(DevIO.AppMvc.Startup))]
 namespace DevIO.AppMvc
@@ -9,6 +13,12 @@ namespace DevIO.AppMvc
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+
+            DependencyInjectionConfig.RegisterDIContainer();
+            AreaRegistration.RegisterAllAreas();
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }
