@@ -1,20 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using DevIO.AppMvc.Models;
+using AutoMapper;
 using DevIO.AppMvc.Models.ViewModels;
 using DevIO.Business.Models.Produtos;
 using DevIO.Business.Models.Produtos.Services;
-using DevIO.Infra.Data.Repository;
-using DevIO.Business.Core.Notifications;
-using AutoMapper;
-using System.Security.Cryptography;
 
 namespace DevIO.AppMvc.Controllers
 {

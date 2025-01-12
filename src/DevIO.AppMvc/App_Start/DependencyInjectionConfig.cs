@@ -45,7 +45,6 @@ namespace DevIO.AppMvc.App_Start
             container.Register<IProdutoRepository, ProdutoRepository>(Lifestyle.Scoped);
             container.Register<IProdutoService, ProdutoService>(Lifestyle.Scoped);
             container.Register<IFornecedorRepository, FornecedorRepository>(Lifestyle.Scoped);
-            container.Register<IProdutoService, ProdutoService>(Lifestyle.Scoped);
             container.Register<IEnderecoRepository, EnderecoRepository>(Lifestyle.Scoped);
             container.Register<IFornecedorService, FornecedorService>(Lifestyle.Scoped);
             container.Register<INotificator, Notificator>(Lifestyle.Scoped);
